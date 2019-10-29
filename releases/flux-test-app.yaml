@@ -1,0 +1,17 @@
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: flux-test-app
+  namespace: flux-test-app
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: semver:-~1.0
+spec:
+  releaseName: flux-test-app
+  chart:
+    git: git@github.com:domingusj/flux-test
+    path: charts/flux-test-app
+    ref: master
+  values:
+    image:
+      tag: 1.0.0
