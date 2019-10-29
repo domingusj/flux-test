@@ -1,3 +1,4 @@
+---
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
@@ -13,4 +14,4 @@ spec:
     path: charts/flux-test-app
     ref: master
   values:
-    image: domingusj/flux-test-app:1.0.0
+    image: domingusj/flux-test-app:1.0.1
