@@ -13,5 +13,4 @@ spec:
     path: charts/flux-test-app
     ref: master
   values:
-    image:
-      tag: 1.0.0
+    image: domingusj/flux-test-app:1.0.0
