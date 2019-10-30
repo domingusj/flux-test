@@ -12,4 +12,4 @@ spec:
     path: charts/flux-test-app
     ref: production
   values:
-    image: domingusj/flux-test-app:release-1.0.0
+    image: domingusj/flux-test-app:1.0.2
