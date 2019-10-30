@@ -4,13 +4,12 @@ metadata:
   name: flux-test-app
   namespace: flux-test-app
   annotations:
-    flux.weave.works/automated: "true"
-    flux.weave.works/tag.chart-image: glob:release-*
+    flux.weave.works/automated: "false"
 spec:
   releaseName: flux-test-app
   chart:
     git: git@github.com:domingusj/flux-test
     path: charts/flux-test-app
-    ref: master
+    ref: production
   values:
     image: domingusj/flux-test-app:release-1.0.0
