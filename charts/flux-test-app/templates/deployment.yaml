@@ -16,7 +16,7 @@ spec:
         app: flux-test-app
     spec:
       containers:
-        - image: "{{ .Values.image }}"
+        - image: "{{.Values.image.repository }}:{{ .Values.image.tag }}"
           name: flux-test-app
           ports:
             - containerPort: {{ .Values.port }}
