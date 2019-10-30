@@ -19,4 +19,4 @@ spec:
         - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           name: flux-test-app
           ports:
-            - containerPort: 8888
+            - containerPort: {{ .Values.port }}
