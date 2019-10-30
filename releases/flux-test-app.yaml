@@ -16,4 +16,4 @@ spec:
   values:
     image:
       repository: domingusj/flux-test-app
-      tag: 1.0.1
+      tag: 1.0.2
